@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3bx-sc-ciH">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw View Controller-->
+        <scene sceneID="K31-PK-0PP">
+            <objects>
+                <viewController storyboardIdentifier="BLDrawViewController" id="3bx-sc-ciH" customClass="BLDrawViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNr-PA-uql">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43z-fv-uf1" customClass="BLDrawView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="646"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-0l-UPm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="f8k-SR-8Tz"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="清屏" id="Kij-cI-VsS">
+                                        <connections>
+                                            <action selector="clear:" destination="3bx-sc-ciH" id="8ae-n3-mQf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="撤销" id="daV-KG-QKd">
+                                        <connections>
+                                            <action selector="undo:" destination="3bx-sc-ciH" id="5iD-Qq-05C"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="橡皮" id="BO5-8P-aFX">
+                                        <connections>
+                                            <action selector="erase:" destination="3bx-sc-ciH" id="xI6-0J-L0A"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="图片" id="vAf-p3-GaM">
+                                        <connections>
+                                            <action selector="photo:" destination="3bx-sc-ciH" id="g1O-3C-FJu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="140" style="plain" systemItem="fixedSpace" id="wm6-Yz-72i"/>
+                                    <barButtonItem title="保存" id="Uiw-2B-3oS">
+                                        <connections>
+                                            <action selector="save:" destination="3bx-sc-ciH" id="J9a-Om-lao"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKj-Ag-bQe">
+                                <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-Ub-slH">
+                                        <rect key="frame" x="0.0" y="78" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fko-k7-5G3">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <connections>
+                                                    <action selector="setLineColor:" destination="3bx-sc-ciH" eventType="touchUpInside" id="Qbl-Zu-P6D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nM-2L-IQU">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <connections>
+                                                    <action selector="setLineColor:" destination="3bx-sc-ciH" eventType="touchUpInside" id="Lsf-97-0Nm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezj-gu-Gx5">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="setLineColor:" destination="3bx-sc-ciH" eventType="touchUpInside" id="a3p-0k-Ybu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7YJ-IU-834"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="EeB-RH-crs">
+                                        <rect key="frame" x="192" y="20" width="204" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Plj-yu-cyT"/>
+                                            <constraint firstAttribute="height" constant="30" id="trs-py-Uby"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="setLineWidth:" destination="3bx-sc-ciH" eventType="valueChanged" id="ux9-vG-Tf0"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="H0o-zI-zFs"/>
+                                    <constraint firstItem="xgX-Ub-slH" firstAttribute="leading" secondItem="XKj-Ag-bQe" secondAttribute="leading" id="IGd-jP-TdS"/>
+                                    <constraint firstItem="xgX-Ub-slH" firstAttribute="top" secondItem="EeB-RH-crs" secondAttribute="bottom" constant="28" id="MmN-cy-ppQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EeB-RH-crs" secondAttribute="trailing" constant="20" id="gHB-Qv-AEM"/>
+                                    <constraint firstAttribute="bottom" secondItem="xgX-Ub-slH" secondAttribute="bottom" id="j2h-p4-RRy"/>
+                                    <constraint firstAttribute="bottom" secondItem="xgX-Ub-slH" secondAttribute="bottom" id="khG-EN-KPQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xgX-Ub-slH" secondAttribute="trailing" id="pRf-Fi-1ke"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ieo-iX-B8U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ieo-iX-B8U" firstAttribute="trailing" secondItem="XKj-Ag-bQe" secondAttribute="trailing" id="4jF-gN-v02"/>
+                            <constraint firstItem="9rw-0l-UPm" firstAttribute="trailing" secondItem="Ieo-iX-B8U" secondAttribute="trailing" id="9z1-eX-AJa"/>
+                            <constraint firstItem="43z-fv-uf1" firstAttribute="top" secondItem="9rw-0l-UPm" secondAttribute="bottom" id="Dsm-6H-8GP"/>
+                            <constraint firstItem="Ieo-iX-B8U" firstAttribute="trailing" secondItem="43z-fv-uf1" secondAttribute="trailing" id="RHG-cM-MJX"/>
+                            <constraint firstItem="Ieo-iX-B8U" firstAttribute="bottom" secondItem="XKj-Ag-bQe" secondAttribute="bottom" id="Wdb-q5-VQZ"/>
+                            <constraint firstItem="9rw-0l-UPm" firstAttribute="leading" secondItem="Ieo-iX-B8U" secondAttribute="leading" id="YEk-IX-Ghd"/>
+                            <constraint firstItem="9rw-0l-UPm" firstAttribute="top" secondItem="Ieo-iX-B8U" secondAttribute="top" id="cNG-1c-MS2"/>
+                            <constraint firstItem="Ieo-iX-B8U" firstAttribute="bottom" secondItem="XKj-Ag-bQe" secondAttribute="bottom" id="dlg-Tk-lvt"/>
+                            <constraint firstItem="43z-fv-uf1" firstAttribute="leading" secondItem="Ieo-iX-B8U" secondAttribute="leading" id="hJ9-w2-1Ge"/>
+                            <constraint firstItem="XKj-Ag-bQe" firstAttribute="leading" secondItem="Ieo-iX-B8U" secondAttribute="leading" id="jh8-oI-Zoo"/>
+                            <constraint firstItem="XKj-Ag-bQe" firstAttribute="top" secondItem="43z-fv-uf1" secondAttribute="bottom" id="tkk-4r-cmg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vDraw" destination="43z-fv-uf1" id="Vti-Fd-Xf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRG-Sj-y2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478.26086956521743" y="-252.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

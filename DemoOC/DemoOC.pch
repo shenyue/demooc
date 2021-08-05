@@ -1,0 +1,40 @@
+//
+//  DemoOC.pch
+//  DemoOC
+//
+//  Created by bailong on 2021/7/23.
+//
+
+#ifndef DemoOC_pch
+#define DemoOC_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 1 存放共用宏
+// 2 存放共用头文件
+// 3 自定义Log
+// 注意: pch 原理 是把pch内容 拷贝到每个文件中，所以如果有 .c 或 .cpp 文件，可能导致不识别，编译报错
+//      所以 必须做判断，每个OC文件 都有一个隐藏的 宏 __OBJC__ 判断是否定义此宏，由此宏才拷贝pch内容
+//
+
+#ifdef __OBJC__
+
+#define Size [[UIScreen mainScreen] bounds].size
+#define SW [[UIScreen mainScreen] bounds].size.width
+#define SH [[UIScreen mainScreen] bounds].size.height
+
+#import "UIImage+Resizing.h"
+#import "Tools.h"
+
+#ifdef DEBUG
+    #define blog(...) NSLog(__VA_ARGS__)
+#else
+    #define blog(...) // NSLog(__VA_ARGS__)
+#endif
+
+#endif
+
+
+
+#endif /* DemoOC_pch */
