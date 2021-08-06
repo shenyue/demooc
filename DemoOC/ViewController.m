@@ -28,8 +28,9 @@
 #import "BLLayer.h"
 #import "BLClock.h"
 #import "BLAnimations.h"
-
 #import "BLTurntable.h"
+#import "BLReplicator.h"
+#import "BLInvertedImage.h"
 
 @interface ViewController () <UIScrollViewDelegate>
 
@@ -68,9 +69,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = [UIColor blackColor];
+    
     [self.navigationController.navigationBar setHidden:YES];
     
-    [self makeBLTurntable];
+    [self makeBLInvertedImage];
+//    [self makeBLReplicator];
+//    [self makeBLTurntable];
 //    [self makeBLAnimations];
 //    [self makeBLClock];
 //    [self makeBLLayer];
@@ -111,6 +116,56 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+}
+
+
+- (void)makeBLInvertedImage {
+    
+    NSArray *arr = @[@"avatar", @"bz1", @"bz2", @"bz3"];
+    for (int i=0; i<arr.count; i++) {
+        CGRect frame = CGRectMake(30.f + i * 40.f, 100.f, 100.f, 100.f);
+        BLInvertedImage *view = [[BLInvertedImage alloc] initWithFrame:frame];
+        [self.view addSubview:view];
+
+        UIImage *img = [UIImage imageNamed:arr[i]];
+        view.image = img;
+        view.isLeft = YES;
+    }
+    for (int i=0; i<arr.count; i++) {
+        CGRect frame = CGRectMake(50.f + i * 40.f, 400.f, 100.f, 100.f);
+        BLInvertedImage *view = [[BLInvertedImage alloc] initWithFrame:frame];
+        [self.view addSubview:view];
+
+        UIImage *img = [UIImage imageNamed:arr[i]];
+        view.image = img;
+        view.isLeft = NO;
+        view.layer.zPosition = 100.f - i;
+    }
+    
+//    UIImage *img1 = [UIImage imageNamed:arr[0]];
+//    UIImage *img2 = [UIImage imageNamed:arr[1]];
+//    UIImage *img3 = [UIImage imageNamed:arr[2]];
+//    UIImageView *ivImg1 = [[UIImageView alloc] initWithImage:img1];
+//    UIImageView *ivImg2 = [[UIImageView alloc] initWithImage:img2];
+//    UIImageView *ivImg3 = [[UIImageView alloc] initWithImage:img3];
+//    [self.view addSubview:ivImg1];
+//    [self.view addSubview:ivImg2];
+//    [self.view addSubview:ivImg3];
+//    ivImg1.layer.zPosition = 3;
+//    ivImg2.layer.zPosition = 2;
+//    ivImg3.layer.zPosition = 1;
+//
+//    CATransform3D transform = CATransform3DIdentity;
+//    transform.m34 = 1 / 900.f;
+//    CGFloat angle = M_PI_4;
+//    ivImg1.layer.transform = CATransform3DRotate(transform, angle, 0, 1, 0);
+//    ivImg2.layer.transform = CATransform3DRotate(transform, angle, 0, 1, 0);
+//    ivImg3.layer.transform = CATransform3DRotate(transform, angle, 0, 1, 0);
+    
+}
+- (void)makeBLReplicator {
+    BLReplicator *view = [[BLReplicator alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
 }
 
 - (void)makeBLTurntable {

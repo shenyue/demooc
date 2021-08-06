@@ -24,18 +24,12 @@
 		DF577DBE26959E6C0034F766 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF577DBD26959E6C0034F766 /* main.m */; };
 		DF577DC826959E6C0034F766 /* DemoOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF577DC726959E6C0034F766 /* DemoOCTests.m */; };
 		DF577DD326959E6C0034F766 /* DemoOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF577DD226959E6C0034F766 /* DemoOCUITests.m */; };
-		DF577E5D2695AB6D0034F766 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = DF577E5C2695AB6D0034F766 /* btn.png */; };
-		DF577E652695AE2C0034F766 /* btn2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF577E642695AE2C0034F766 /* btn2.png */; };
-		DF577E912696916F0034F766 /* images in Resources */ = {isa = PBXBuildFile; fileRef = DF577E902696916F0034F766 /* images */; };
 		DFB6F8062696DBD7007E9841 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8052696DBD7007E9841 /* Tools.m */; };
 		DFB6F81A2696DE1C007E9841 /* BLMCity.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8192696DE1C007E9841 /* BLMCity.m */; };
 		DFB6F82B2696EC8B007E9841 /* BLVDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F82A2696EC8B007E9841 /* BLVDemo.m */; };
 		DFB6F834269EE69D007E9841 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F833269EE69D007E9841 /* UIImage+Resizing.m */; };
 		DFB6F8A126A283B5007E9841 /* BLScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8A026A283B5007E9841 /* BLScrollViewDelegate.m */; };
-		DFB6F8A626A2C014007E9841 /* svimg.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB6F8A526A2C014007E9841 /* svimg.png */; };
 		DFB6F8B226A8FF08007E9841 /* TableCellDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8B126A8FF08007E9841 /* TableCellDemo.m */; };
-		DFB6F8C026A97899007E9841 /* ava.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB6F8BF26A97899007E9841 /* ava.png */; };
-		DFB6F8C526A9789F007E9841 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB6F8C426A9789F007E9841 /* 2.png */; };
 		DFB6F8E426ABB76B007E9841 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8E326ABB76B007E9841 /* App.m */; };
 		DFB6F8EC26ABF449007E9841 /* BLPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F8EB26ABF449007E9841 /* BLPickView.m */; };
 		DFB6F94626AE4DAD007E9841 /* BLAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F94526AE4DAC007E9841 /* BLAlertController.m */; };
@@ -44,7 +38,6 @@
 		DFB6F96326B129C6007E9841 /* BLWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F96226B129C6007E9841 /* BLWindow.m */; };
 		DFB6F96D26B23D48007E9841 /* BLGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F96C26B23D48007E9841 /* BLGestureView.m */; };
 		DFB6F97926B29F2C007E9841 /* BLDrawerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F97826B29F2B007E9841 /* BLDrawerFrame.m */; };
-		DFB6F98426B3F311007E9841 /* avatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DFB6F98326B3F311007E9841 /* avatar.jpeg */; };
 		DFB6F98E26B7F565007E9841 /* BLGestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F98D26B7F565007E9841 /* BLGestureLock.m */; };
 		DFB6F9AD26BA2762007E9841 /* BLDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F9AB26BA2762007E9841 /* BLDrawViewController.m */; };
 		DFB6F9B626BA290A007E9841 /* BLDrawViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB6F9B526BA290A007E9841 /* BLDrawViewController.storyboard */; };
@@ -57,6 +50,9 @@
 		DFB6FA0826BBC476007E9841 /* BLTurntable.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FA0726BBC476007E9841 /* BLTurntable.m */; };
 		DFB6FA1226BBCCFB007E9841 /* BLWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FA1126BBCCFB007E9841 /* BLWheel.m */; };
 		DFB6FA1B26BBDF88007E9841 /* BLWheelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FA1A26BBDF88007E9841 /* BLWheelButton.m */; };
+		DFB6FA2226BCC91B007E9841 /* BLAudioFrequency.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FA2126BCC91B007E9841 /* BLAudioFrequency.m */; };
+		DFC0423326BCD62B00960B05 /* BLReplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0423226BCD62B00960B05 /* BLReplicator.m */; };
+		DFC0423D26BCE28F00960B05 /* BLInvertedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,9 +106,6 @@
 		DF577DCE26959E6C0034F766 /* DemoOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF577DD226959E6C0034F766 /* DemoOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoOCUITests.m; sourceTree = "<group>"; };
 		DF577DD426959E6C0034F766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF577E5C2695AB6D0034F766 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
-		DF577E642695AE2C0034F766 /* btn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn2.png; sourceTree = "<group>"; };
-		DF577E902696916F0034F766 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		DFB6F8042696DBD7007E9841 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		DFB6F8052696DBD7007E9841 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		DFB6F8182696DE1C007E9841 /* BLMCity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLMCity.h; sourceTree = "<group>"; };
@@ -123,11 +116,8 @@
 		DFB6F833269EE69D007E9841 /* UIImage+Resizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
 		DFB6F89F26A283B5007E9841 /* BLScrollViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLScrollViewDelegate.h; sourceTree = "<group>"; };
 		DFB6F8A026A283B5007E9841 /* BLScrollViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLScrollViewDelegate.m; sourceTree = "<group>"; };
-		DFB6F8A526A2C014007E9841 /* svimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = svimg.png; sourceTree = "<group>"; };
 		DFB6F8B026A8FF08007E9841 /* TableCellDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableCellDemo.h; sourceTree = "<group>"; };
 		DFB6F8B126A8FF08007E9841 /* TableCellDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableCellDemo.m; sourceTree = "<group>"; };
-		DFB6F8BF26A97899007E9841 /* ava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ava.png; sourceTree = "<group>"; };
-		DFB6F8C426A9789F007E9841 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		DFB6F8CF26AAE4FC007E9841 /* DemoOC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoOC.pch; sourceTree = "<group>"; };
 		DFB6F8E226ABB76B007E9841 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		DFB6F8E326ABB76B007E9841 /* App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
@@ -145,7 +135,6 @@
 		DFB6F96C26B23D48007E9841 /* BLGestureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLGestureView.m; sourceTree = "<group>"; };
 		DFB6F97726B29F2B007E9841 /* BLDrawerFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDrawerFrame.h; sourceTree = "<group>"; };
 		DFB6F97826B29F2B007E9841 /* BLDrawerFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLDrawerFrame.m; sourceTree = "<group>"; };
-		DFB6F98326B3F311007E9841 /* avatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpeg; sourceTree = "<group>"; };
 		DFB6F98C26B7F565007E9841 /* BLGestureLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLGestureLock.h; sourceTree = "<group>"; };
 		DFB6F98D26B7F565007E9841 /* BLGestureLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLGestureLock.m; sourceTree = "<group>"; };
 		DFB6F9AA26BA2762007E9841 /* BLDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDrawViewController.h; sourceTree = "<group>"; };
@@ -169,6 +158,12 @@
 		DFB6FA1126BBCCFB007E9841 /* BLWheel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLWheel.m; sourceTree = "<group>"; };
 		DFB6FA1926BBDF88007E9841 /* BLWheelButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLWheelButton.h; sourceTree = "<group>"; };
 		DFB6FA1A26BBDF88007E9841 /* BLWheelButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLWheelButton.m; sourceTree = "<group>"; };
+		DFB6FA2026BCC91B007E9841 /* BLAudioFrequency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAudioFrequency.h; sourceTree = "<group>"; };
+		DFB6FA2126BCC91B007E9841 /* BLAudioFrequency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAudioFrequency.m; sourceTree = "<group>"; };
+		DFC0423126BCD62B00960B05 /* BLReplicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLReplicator.h; sourceTree = "<group>"; };
+		DFC0423226BCD62B00960B05 /* BLReplicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLReplicator.m; sourceTree = "<group>"; };
+		DFC0423B26BCE28F00960B05 /* BLInvertedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLInvertedImage.h; sourceTree = "<group>"; };
+		DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLInvertedImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,15 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				DFB6F8132696DDD1007E9841 /* Home */,
-				DFB6F8122696DDC8007E9841 /* Rs */,
 				DFB6F8002696DB64007E9841 /* Utils */,
-				DF577E902696916F0034F766 /* images */,
-				DF577E642695AE2C0034F766 /* btn2.png */,
-				DFB6F98326B3F311007E9841 /* avatar.jpeg */,
-				DFB6F8C426A9789F007E9841 /* 2.png */,
-				DFB6F8BF26A97899007E9841 /* ava.png */,
-				DF577E5C2695AB6D0034F766 /* btn.png */,
-				DFB6F8A526A2C014007E9841 /* svimg.png */,
 				DF577DAB26959E690034F766 /* AppDelegate.h */,
 				DF577DAC26959E690034F766 /* AppDelegate.m */,
 				DF577DAE26959E690034F766 /* SceneDelegate.h */,
@@ -334,13 +321,6 @@
 				DFB6F8E326ABB76B007E9841 /* App.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		DFB6F8122696DDC8007E9841 /* Rs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rs;
 			sourceTree = "<group>";
 		};
 		DFB6F8132696DDD1007E9841 /* Home */ = {
@@ -502,6 +482,9 @@
 		DFB6F9D326BA836A007E9841 /* BLLayers */ = {
 			isa = PBXGroup;
 			children = (
+				DFC0423A26BCE26F00960B05 /* BLInvertedImage */,
+				DFC0423026BCD60D00960B05 /* BLReplicator */,
+				DFB6FA1F26BCC905007E9841 /* BLAudioFrequency */,
 				DFB6FA0526BBC466007E9841 /* BLTurntable */,
 				DFB6F9F826BB8E43007E9841 /* BLAnimations */,
 				DFB6F9EE26BB7869007E9841 /* BLClock */,
@@ -548,6 +531,33 @@
 				DFB6FA1A26BBDF88007E9841 /* BLWheelButton.m */,
 			);
 			path = BLTurntable;
+			sourceTree = "<group>";
+		};
+		DFB6FA1F26BCC905007E9841 /* BLAudioFrequency */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6FA2026BCC91B007E9841 /* BLAudioFrequency.h */,
+				DFB6FA2126BCC91B007E9841 /* BLAudioFrequency.m */,
+			);
+			path = BLAudioFrequency;
+			sourceTree = "<group>";
+		};
+		DFC0423026BCD60D00960B05 /* BLReplicator */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0423126BCD62B00960B05 /* BLReplicator.h */,
+				DFC0423226BCD62B00960B05 /* BLReplicator.m */,
+			);
+			path = BLReplicator;
+			sourceTree = "<group>";
+		};
+		DFC0423A26BCE26F00960B05 /* BLInvertedImage */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0423B26BCE28F00960B05 /* BLInvertedImage.h */,
+				DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */,
+			);
+			path = BLInvertedImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,17 +662,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB6F8C026A97899007E9841 /* ava.png in Resources */,
 				DFB6F9B626BA290A007E9841 /* BLDrawViewController.storyboard in Resources */,
-				DF577E912696916F0034F766 /* images in Resources */,
-				DFB6F8C526A9789F007E9841 /* 2.png in Resources */,
 				DF577DBB26959E6C0034F766 /* LaunchScreen.storyboard in Resources */,
-				DFB6F8A626A2C014007E9841 /* svimg.png in Resources */,
-				DF577E652695AE2C0034F766 /* btn2.png in Resources */,
 				DF577DB826959E6C0034F766 /* Assets.xcassets in Resources */,
-				DF577E5D2695AB6D0034F766 /* btn.png in Resources */,
 				3B34B52926973FB700CA3DA5 /* BLVDemo.xib in Resources */,
-				DFB6F98426B3F311007E9841 /* avatar.jpeg in Resources */,
 				DF577DB626959E690034F766 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,6 +695,7 @@
 				DFB6FA1B26BBDF88007E9841 /* BLWheelButton.m in Sources */,
 				DFB6F8E426ABB76B007E9841 /* App.m in Sources */,
 				3B31E00F26B6AC9C0025C596 /* BLWatermarkView.m in Sources */,
+				DFB6FA2226BCC91B007E9841 /* BLAudioFrequency.m in Sources */,
 				DFB6F94626AE4DAD007E9841 /* BLAlertController.m in Sources */,
 				DFB6F9F126BB787A007E9841 /* BLClock.m in Sources */,
 				DFB6FA1226BBCCFB007E9841 /* BLWheel.m in Sources */,
@@ -699,6 +703,7 @@
 				DFB6F82B2696EC8B007E9841 /* BLVDemo.m in Sources */,
 				DF577DB326959E690034F766 /* ViewController.m in Sources */,
 				DFB6F81A2696DE1C007E9841 /* BLMCity.m in Sources */,
+				DFC0423326BCD62B00960B05 /* BLReplicator.m in Sources */,
 				DFB6F8062696DBD7007E9841 /* Tools.m in Sources */,
 				3B31E01326B750900025C596 /* BLClipView.m in Sources */,
 				DFB6F96D26B23D48007E9841 /* BLGestureView.m in Sources */,
@@ -722,6 +727,7 @@
 				DF577DB026959E690034F766 /* SceneDelegate.m in Sources */,
 				DFB6F95C26B0FC56007E9841 /* BLDraggableView.m in Sources */,
 				3B34B5342697C67B00CA3DA5 /* BLButton.m in Sources */,
+				DFC0423D26BCE28F00960B05 /* BLInvertedImage.m in Sources */,
 				DFB6F834269EE69D007E9841 /* UIImage+Resizing.m in Sources */,
 				DFB6FA0826BBC476007E9841 /* BLTurntable.m in Sources */,
 			);
