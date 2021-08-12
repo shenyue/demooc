@@ -53,6 +53,9 @@
 		DFB6FA2226BCC91B007E9841 /* BLAudioFrequency.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6FA2126BCC91B007E9841 /* BLAudioFrequency.m */; };
 		DFC0423326BCD62B00960B05 /* BLReplicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0423226BCD62B00960B05 /* BLReplicator.m */; };
 		DFC0423D26BCE28F00960B05 /* BLInvertedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */; };
+		DFC0424B26C0BCB600960B05 /* BLStickJelly.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0424A26C0BCB600960B05 /* BLStickJelly.m */; };
+		DFC0425426C210D700960B05 /* BLStickJellyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0425326C210D700960B05 /* BLStickJellyButton.m */; };
+		DFC0425B26C24C8800960B05 /* BLWave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0425A26C24C8800960B05 /* BLWave.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +167,12 @@
 		DFC0423226BCD62B00960B05 /* BLReplicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLReplicator.m; sourceTree = "<group>"; };
 		DFC0423B26BCE28F00960B05 /* BLInvertedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLInvertedImage.h; sourceTree = "<group>"; };
 		DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLInvertedImage.m; sourceTree = "<group>"; };
+		DFC0424926C0BCB600960B05 /* BLStickJelly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLStickJelly.h; sourceTree = "<group>"; };
+		DFC0424A26C0BCB600960B05 /* BLStickJelly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLStickJelly.m; sourceTree = "<group>"; };
+		DFC0425226C210D700960B05 /* BLStickJellyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLStickJellyButton.h; sourceTree = "<group>"; };
+		DFC0425326C210D700960B05 /* BLStickJellyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLStickJellyButton.m; sourceTree = "<group>"; };
+		DFC0425926C24C8800960B05 /* BLWave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLWave.h; sourceTree = "<group>"; };
+		DFC0425A26C24C8800960B05 /* BLWave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLWave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +491,8 @@
 		DFB6F9D326BA836A007E9841 /* BLLayers */ = {
 			isa = PBXGroup;
 			children = (
+				DFC0425826C24C7200960B05 /* BLWave */,
+				DFC0424826C0BBE500960B05 /* BLStickJelly */,
 				DFC0423A26BCE26F00960B05 /* BLInvertedImage */,
 				DFC0423026BCD60D00960B05 /* BLReplicator */,
 				DFB6FA1F26BCC905007E9841 /* BLAudioFrequency */,
@@ -558,6 +569,26 @@
 				DFC0423C26BCE28F00960B05 /* BLInvertedImage.m */,
 			);
 			path = BLInvertedImage;
+			sourceTree = "<group>";
+		};
+		DFC0424826C0BBE500960B05 /* BLStickJelly */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0424926C0BCB600960B05 /* BLStickJelly.h */,
+				DFC0424A26C0BCB600960B05 /* BLStickJelly.m */,
+				DFC0425226C210D700960B05 /* BLStickJellyButton.h */,
+				DFC0425326C210D700960B05 /* BLStickJellyButton.m */,
+			);
+			path = BLStickJelly;
+			sourceTree = "<group>";
+		};
+		DFC0425826C24C7200960B05 /* BLWave */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0425926C24C8800960B05 /* BLWave.h */,
+				DFC0425A26C24C8800960B05 /* BLWave.m */,
+			);
+			path = BLWave;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,6 +723,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB6F97926B29F2C007E9841 /* BLDrawerFrame.m in Sources */,
+				DFC0425426C210D700960B05 /* BLStickJellyButton.m in Sources */,
 				DFB6FA1B26BBDF88007E9841 /* BLWheelButton.m in Sources */,
 				DFB6F8E426ABB76B007E9841 /* App.m in Sources */,
 				3B31E00F26B6AC9C0025C596 /* BLWatermarkView.m in Sources */,
@@ -712,11 +744,13 @@
 				DFB6F96326B129C6007E9841 /* BLWindow.m in Sources */,
 				DFB6F9C226BA2FE7007E9841 /* BLDrawView.m in Sources */,
 				DFB6F9E726BA8411007E9841 /* BLLayer.m in Sources */,
+				DFC0424B26C0BCB600960B05 /* BLStickJelly.m in Sources */,
 				DFB6F9C826BA3B23007E9841 /* BLBezierPath.m in Sources */,
 				3B34B52D2697C0F000CA3DA5 /* DemoCode.m in Sources */,
 				DFB6F9CE26BA60F1007E9841 /* BLHandleView.m in Sources */,
 				DFB6F8EC26ABF449007E9841 /* BLPickView.m in Sources */,
 				3BE708D226A643E900B6E5B5 /* TableDemo.m in Sources */,
+				DFC0425B26C24C8800960B05 /* BLWave.m in Sources */,
 				DFB6F8B226A8FF08007E9841 /* TableCellDemo.m in Sources */,
 				DF577DBE26959E6C0034F766 /* main.m in Sources */,
 				DFB6F98E26B7F565007E9841 /* BLGestureLock.m in Sources */,

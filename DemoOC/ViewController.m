@@ -31,6 +31,8 @@
 #import "BLTurntable.h"
 #import "BLReplicator.h"
 #import "BLInvertedImage.h"
+#import "BLStickJelly.h"
+#import "BLWave.h"
 
 @interface ViewController () <UIScrollViewDelegate>
 
@@ -42,6 +44,7 @@
     BLWatermarkView *_wmView;
     
     BLClipView *_clipView;
+    BLInvertedImage *_iView;
 }
 
 // 自定义代理对象的时候，需要设置个强引用属性，因为scrollView的代理是weak的
@@ -69,11 +72,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blackColor];
-    
     [self.navigationController.navigationBar setHidden:YES];
     
-    [self makeBLInvertedImage];
+    [self makeBLWave];
+//    [self makeBLStickJelly];
+//    [self makeBLInvertedImage];
 //    [self makeBLReplicator];
 //    [self makeBLTurntable];
 //    [self makeBLAnimations];
@@ -118,8 +121,18 @@
     [super viewDidAppear:animated];
 }
 
+- (void)makeBLWave {
+    BLWave *view = [[BLWave alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
+}
 
+- (void)makeBLStickJelly {
+    BLStickJelly *view = [[BLStickJelly alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
+}
 - (void)makeBLInvertedImage {
+    
+    self.view.backgroundColor = [UIColor blackColor];
     
     NSArray *arr = @[@"avatar", @"bz1", @"bz2", @"bz3"];
     for (int i=0; i<arr.count; i++) {
@@ -131,11 +144,18 @@
         view.image = img;
         view.isLeft = YES;
     }
+    NSInteger maxIndex = 1000;
     for (int i=0; i<arr.count; i++) {
         CGRect frame = CGRectMake(50.f + i * 40.f, 400.f, 100.f, 100.f);
         BLInvertedImage *view = [[BLInvertedImage alloc] initWithFrame:frame];
-        [self.view addSubview:view];
-
+        maxIndex -= 1;
+        if (_iView == nil) {
+            [self.view addSubview:view];
+            _iView = view;
+        } else {
+            [self.view insertSubview:view belowSubview:_iView];
+        }
+        
         UIImage *img = [UIImage imageNamed:arr[i]];
         view.image = img;
         view.isLeft = NO;
