@@ -33,6 +33,7 @@
 #import "BLInvertedImage.h"
 #import "BLStickJelly.h"
 #import "BLWave.h"
+#import "BLCoverFrame.h"
 
 @interface ViewController () <UIScrollViewDelegate>
 
@@ -45,6 +46,9 @@
     
     BLClipView *_clipView;
     BLInvertedImage *_iView;
+    
+    UIView *_sView;
+    BLCoverFrame *_vCoverFrame;
 }
 
 // 自定义代理对象的时候，需要设置个强引用属性，因为scrollView的代理是weak的
@@ -74,7 +78,8 @@
     
     [self.navigationController.navigationBar setHidden:YES];
     
-    [self makeBLWave];
+    [self makeBLCoverFrame];
+//    [self makeBLWave];
 //    [self makeBLStickJelly];
 //    [self makeBLInvertedImage];
 //    [self makeBLReplicator];
@@ -121,6 +126,30 @@
     [super viewDidAppear:animated];
 }
 
+
+- (void)makeBLCoverFrame {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(20.f, 450.f, 140.f, 50);
+    [btn setTitle:@"弹出" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor blueColor];
+    [btn addTarget:self action:@selector(popUp:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    UIImageView *ivImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 3000.f, 500.f)];
+    ivImage.image = [UIImage imageNamed:@"bz1"];
+    ivImage.contentMode = UIViewContentModeScaleAspectFit;
+    _sView = ivImage;
+    [self.view addSubview:ivImage];
+    
+    _vCoverFrame = [[BLCoverFrame alloc] init];
+}
+- (void)popUp:(UIButton *)btn {
+    
+//    _vCoverFrame.diraction = BLCoverFramePopupDirectionFromRight;
+//    [_vCoverFrame showWithView:_sView];
+//    _vCoverFrame.offsetY = -100;
+    [_vCoverFrame showDirectionFromCenterWithView:_sView];
+}
 - (void)makeBLWave {
     BLWave *view = [[BLWave alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];

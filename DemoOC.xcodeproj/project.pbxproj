@@ -56,6 +56,7 @@
 		DFC0424B26C0BCB600960B05 /* BLStickJelly.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0424A26C0BCB600960B05 /* BLStickJelly.m */; };
 		DFC0425426C210D700960B05 /* BLStickJellyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0425326C210D700960B05 /* BLStickJellyButton.m */; };
 		DFC0425B26C24C8800960B05 /* BLWave.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC0425A26C24C8800960B05 /* BLWave.m */; };
+		DFC042F526C6040A00960B05 /* BLCoverFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC042F426C6040A00960B05 /* BLCoverFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,8 @@
 		DFC0425326C210D700960B05 /* BLStickJellyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLStickJellyButton.m; sourceTree = "<group>"; };
 		DFC0425926C24C8800960B05 /* BLWave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLWave.h; sourceTree = "<group>"; };
 		DFC0425A26C24C8800960B05 /* BLWave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLWave.m; sourceTree = "<group>"; };
+		DFC042F326C6040A00960B05 /* BLCoverFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCoverFrame.h; sourceTree = "<group>"; };
+		DFC042F426C6040A00960B05 /* BLCoverFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCoverFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +452,7 @@
 		DFB6F97526B29EC6007E9841 /* BLFrames */ = {
 			isa = PBXGroup;
 			children = (
+				DFC042F226C603EA00960B05 /* BLCoverFrame */,
 				DFB6F97626B29EDA007E9841 /* BLDrawerFrame */,
 			);
 			path = BLFrames;
@@ -589,6 +593,15 @@
 				DFC0425A26C24C8800960B05 /* BLWave.m */,
 			);
 			path = BLWave;
+			sourceTree = "<group>";
+		};
+		DFC042F226C603EA00960B05 /* BLCoverFrame */ = {
+			isa = PBXGroup;
+			children = (
+				DFC042F326C6040A00960B05 /* BLCoverFrame.h */,
+				DFC042F426C6040A00960B05 /* BLCoverFrame.m */,
+			);
+			path = BLCoverFrame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -739,6 +752,7 @@
 				DFB6F8062696DBD7007E9841 /* Tools.m in Sources */,
 				3B31E01326B750900025C596 /* BLClipView.m in Sources */,
 				DFB6F96D26B23D48007E9841 /* BLGestureView.m in Sources */,
+				DFC042F526C6040A00960B05 /* BLCoverFrame.m in Sources */,
 				DF577DAD26959E690034F766 /* AppDelegate.m in Sources */,
 				3B31E00B26B671340025C596 /* BLCADisplayLinkView.m in Sources */,
 				DFB6F96326B129C6007E9841 /* BLWindow.m in Sources */,
